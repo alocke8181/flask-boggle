@@ -1,0 +1,15 @@
+table{
+    font-size: 50px;
+    outline: 1px solid black;
+}
+
+thead{
+    font-weight: bold;
+}
+
+td{
+    outline: 1px solid black;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}

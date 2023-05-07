@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Let's play Boggle!</h1>
+
+<section id="game-board">
+    <table>
+        <thead>
+            {% for char in 'BOGGLE' %}
+                <td>{{char}}</td>
+            {% endfor %}
+        </thead>
+    </table>
+</section>
+
+{% endblock %}
