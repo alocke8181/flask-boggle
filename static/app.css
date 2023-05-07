@@ -3,10 +3,6 @@ table{
     outline: 1px solid black;
 }
 
-thead{
-    font-weight: bold;
-}
-
 td{
     outline: 1px solid black;
     width: 75px;
