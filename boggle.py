@@ -28,6 +28,7 @@ class Boggle():
             board.append(row)
 
         return board
+        
     def make_test_board(self):
         """Make and return a predefined board for testing"""
 
