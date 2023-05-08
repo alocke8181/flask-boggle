@@ -28,9 +28,12 @@ class Boggle {
 
     async submitWord(event){
         event.preventDefault();
+        console.log("submit");
         let guess = this.$guess.val();
-
-        if(!guess){return;}
+        if(!guess){
+            console.log("none");
+            return;
+        }
 
         if(this.words.has(guess)){
             this.notif(`You've already guessed ${guess}`,"error");
@@ -48,7 +51,7 @@ class Boggle {
             this.notif(`${guess} is not on the board`, "error");
         }
         else{
-            this.showWord(guess);
+            this.addWord(guess);
             this.score += guess.length;
             this.updateScore();
             this.words.add(guess);

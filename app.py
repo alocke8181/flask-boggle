@@ -15,7 +15,7 @@ boggle_game = Boggle()
 #Home route
 @app.route('/')
 def make_board():
-    board = boggle_game.make_board()
+    board = boggle_game.make_test_board()
     session['board'] = board
     session['score'] = 0
     session['highscore'] = 0
@@ -26,5 +26,5 @@ def check_guess():
     guess = request.args['guess']
     board = session['board']
     resp = boggle_game.check_valid_word(board,guess)
-    return jsonify({'result':response})
+    return jsonify({'result':resp})
     

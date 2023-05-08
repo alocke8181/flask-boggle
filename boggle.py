@@ -28,6 +28,17 @@ class Boggle():
             board.append(row)
 
         return board
+    def make_test_board(self):
+        """Make and return a predefined board for testing"""
+
+        board = [
+            ["B","O","A","R","D"],
+            ["G","A","M","E","S"],
+            ["S","U","P","E","R"],
+            ["M","E","M","E","S"],
+            ["S","T","O","N","E"]
+        ]
+        return board
 
     def check_valid_word(self, board, word):
         """Check if a word is a valid word in the dictionary and/or the boggle board"""

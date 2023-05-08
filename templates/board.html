@@ -6,10 +6,10 @@
 <h2 id="score">Your Score: 0</h2>
 <h3>Highscore: {{session['highscore']}}</h3>
 
-<section id="word-form">
-    <form method="POST">
-        <input type="text" name="guess" class="guess">
-        <button type="submit">Submit</button>
+<section id="word-cont">
+    <form method="POST" id="word-form">
+        <input type="text" name="guess" id="guess">
+        <button id="submit-button">Submit</button>
     </form>
 </section>
 <br>
@@ -34,5 +34,11 @@
 
 </ul>
 
+<script src="http://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+<script src="static/app.js"></script>
+<script>
+    let game = new Boggle();
+</script>
 
 {% endblock %}
